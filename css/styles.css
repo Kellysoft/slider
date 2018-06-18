@@ -1,0 +1,251 @@
+/**{
+	outline: dotted pink;
+}*/
+
+/*controls white space around everything*/
+.kelly-container{
+padding:25px;
+width: 100%;
+}
+
+
+/* //START The nav buttons*/
+* {
+    box-sizing: border-box;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* //END The nav buttons*/
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .my-column {
+        width: 100%;
+    }
+}
+
+body{
+	background-color: #8A2BE2;
+}
+
+.pest-container{
+	width: 100%;
+}
+.disease-container{
+	width: 100%;
+}
+
+.toggle-buttons{
+	/*border: 65px solid;*/
+	padding:0px;
+	
+	margin: 0px;
+}
+
+.pest-toggle{
+	width: 100%;
+}
+.disease-toggle{
+	width: 100%;
+}
+
+/*the row headers*/
+.my-content-heads-pest{
+	text-align: center;
+	background-color: green;
+	width: 100%;
+	padding: 0% !important;
+	margin: 0% !important;
+
+}
+
+/*the row headers*/
+.my-content-heads-disease{
+	text-align: center;
+	background-color: yellow;
+	width: 100%;
+	padding: 0% !important;
+	margin: 0% !important;
+
+}
+
+/*contolling the font and height of the button boxes*/
+/*button_style*/
+.disease-section{
+
+	margin-bottom: 20px;  /*the whitespace below the buttons 1*/
+	
+
+}
+/*this will make the font 80px when the screen is larger then 601px*/
+@media screen and (min-width: 901px) {
+  .disease-section{
+    font-size: 80px;
+
+  }
+}
+
+/*this will make the font 80px when the screen is larger then 1200px*/
+@media screen and (min-width: 1600px) {
+  .disease-section{
+    font-size: 180px;
+  }
+}
+
+/*this will make the the button height 1/2 size when the screen is smaller then 601px*/
+/*not working*/
+@media screen and (max-width: 801px) {
+  .disease-section{
+    height: 110px;
+    width: 400px;
+    /*margin-left: 0px !important;*/
+
+  }
+}
+
+/*contolling the font and height of the button boxes*/
+/*button_style*/
+.pest-section{
+	
+	margin-bottom: 20px;  /*the whitespace below the buttons 2*/
+	
+
+}
+
+/*this will make the font 80px when the screen is larger then 601px*/
+@media screen and (min-width: 901px) {
+  .pest-section{
+    font-size: 80px;
+  }
+}
+
+
+
+/*this will make the font 80px when the screen is larger then 1200px*/
+@media screen and (min-width: 1600px) {
+  .pest-section{
+    font-size: 180px;
+
+  }
+}
+
+
+
+/*this will make the the button height 1/2 size when the screen is smaller then 601px*/
+@media screen and (max-width: 801px) {
+  .pest-section{
+    height: 110px;
+    /*margin-right: 0px !important;*/
+  }
+}
+
+/*control for the pest section content*/
+.pest-content{
+	background-color: blue;
+	text-align: center;
+	font-size: 3em;
+	padding:20px !important;
+	
+
+}
+/**********************************************************/
+/*these two media queries control the font size for the pest content for zooming */
+/*START HERE!!!!!!!!!!!!!!!!!*/
+@media screen and (min-width: 901px) {
+  .pest-content h5{
+   /*font-size: 3.25rem !important;*/
+  }
+}
+@media screen and (max-width: 900px) {
+  .pest-content h5{
+   font-size: 1.25rem !important;
+  }
+}
+
+/*control for the pest section carousel*/
+.pest-carousel{
+	background-color: blue;
+	text-align: center;
+	font-size: 3em;
+	
+
+}
+
+
+/*control for the disease section content*/
+.disease-content{
+	background-color: red;
+	text-align: center;
+	padding:20px !important;
+}
+
+/*control for the disease section carousel*/
+.disease-carousel{
+	background-color: red;
+	text-align: center;
+}
+
+
+
+
+/*this will ...... when the screen is larger then 601px*/
+/*@media screen and (min-width: 601px) {
+  .kelly-border-left{
+      border: solid black 5px;
+  }
+}*/
+
+/*================================Bootstrap Overrides========================*/
+
+/*this is a bootstrap class. we need to override it or the carosouls wont go full width. */
+.col-sm-6{
+	padding-right:0px;
+	padding-left:0px;
+}
+
+/*bootstrap added a btm margin by default */
+.no-btm-margin{
+	margin-bottom: 0px !important;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.kelly-border-left{
+/*  border: 40px solid transparent;
+    padding: 0px;*/
+    /*-webkit-border-image: url(../images/border-3.png) 20% round; *//* Safari 3.1-5 */
+   /* -o-border-image: url(../images/border-3.png) 20% round;*/ /* Opera 11-12.1 */
+   /* border-image: url(../images/border-3.png) 20% round;*/
+}
+
+.kelly-border-right{
+   /*margin-left: 20px;*/
+}
+
+.kelly-button-continer{
+padding-left: 50px;
+padding-right: 50px;
+
+}
